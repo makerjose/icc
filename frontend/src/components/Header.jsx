@@ -32,7 +32,7 @@ const Header = () => {
                 <>
                   <NavDropdown title={user.name} id='username'>
                     <LinkContainer to='/admin'>
-                      <NavDropdown.Item>Profile</NavDropdown.Item>
+                      <NavDropdown.Item>Some Page</NavDropdown.Item>
                     </LinkContainer>
                     <NavDropdown.Item onClick={logoutHandler}>
                       Logout

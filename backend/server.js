@@ -25,8 +25,8 @@ const port = process.env.PORT || 5432;
 const startServer = async () => {
   try {
     // Wait for the database connection test to complete
-    const result = await pool.query('SELECT NOW()');
-    console.log('Database connected successfully-server:', result.rows[0].now);
+    const result = await pool.query('SELECT * FROM users');
+    console.log('Database connected successfully-server:', result.rows[0]);
 
     // Start the server
     app.listen(port, () => console.log(`Server listening on port ${port}`));
